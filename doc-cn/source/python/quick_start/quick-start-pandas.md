@@ -32,27 +32,27 @@
 ```python
 >>> import pandas as pd
 >>> nyc_schema={
-...     "VendorID":"string",
-...     "tpep_pickup_datetime":"string",
-...     "tpep_dropoff_datetime":"string",
-...     "passenger_count":"int64",
-...     "trip_distance":"double",
-...     "pickup_longitude":"double",
-...     "pickup_latitude":"double",
-...     "dropoff_longitude":"double",
-...     "dropoff_latitude":"double",
-...     "fare_amount":"double",
-...     "tip_amount":"double",
-...     "total_amount":"double",
-...     "buildingid_pickup":"int64",
-...     "buildingid_dropoff":"int64",
-...     "buildingtext_pickup":"string",
-...     "buildingtext_dropoff":"string",
-... }
+     "VendorID":"string",
+     "tpep_pickup_datetime":"string",
+     "tpep_dropoff_datetime":"string",
+     "passenger_count":"int64",
+     "trip_distance":"double",
+     "pickup_longitude":"double",
+     "pickup_latitude":"double",
+     "dropoff_longitude":"double",
+     "dropoff_latitude":"double",
+     "fare_amount":"double",
+     "tip_amount":"double",
+     "total_amount":"double",
+     "buildingid_pickup":"int64",
+     "buildingid_dropoff":"int64",
+     "buildingtext_pickup":"string",
+     "buildingtext_dropoff":"string",
+ }
 >>> df=pd.read_csv("/tmp/0_2M_nyc_taxi_and_building.csv",
-...                dtype=nyc_schema,
-...                date_parser=pd.to_datetime,
-...                parse_dates=["tpep_pickup_datetime","tpep_dropoff_datetime"])
+                dtype=nyc_schema,
+                date_parser=pd.to_datetime,
+                parse_dates=["tpep_pickup_datetime","tpep_dropoff_datetime"])
 ```
 
 打印数据的前5行，验证数据是否加载成功：
