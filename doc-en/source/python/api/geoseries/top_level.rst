@@ -1,0 +1,3 @@
+
+
+.. autoclass:: arctern.GeoSeries
