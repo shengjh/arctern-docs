@@ -1,5 +1,5 @@
 GeoSeries
-=======
+=========
 
 .. autoclass:: arctern.GeoSeries
 .. toctree::

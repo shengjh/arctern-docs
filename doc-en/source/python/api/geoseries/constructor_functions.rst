@@ -7,6 +7,6 @@ Geometry Constructor
 
    function/point
    function/polygon_from_envelope
-   function/geom_from_geoJson
+   function/geom_from_geojson
    function/to_wkt
    function/as_geojson
