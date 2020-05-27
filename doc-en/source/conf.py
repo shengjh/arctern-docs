@@ -14,12 +14,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
+#
+# Currently we must make sure arctern package installed before generate doc.
+#
 # -- Project information -----------------------------------------------------
-import os
-import sys
-sys.path.insert(0, os.path.abspath('/home/shengjh/work/arctern/python/arctern'))
-sys.path.insert(1, os.path.abspath('/home/shengjh/work/arctern/spark/pyspark/arctern_pyspark'))
 project = 'Arctern'
 copyright = '2020, zilliz'
 author = 'zilliz'
@@ -28,19 +26,19 @@ author = 'zilliz'
 import arctern
 release = arctern.version()
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-   'sphinx.ext.autodoc',
-   'sphinx.ext.viewcode',
-   'sphinx_automodapi.automodapi',
-   'sphinx.ext.inheritance_diagram',
-   'sphinx_markdown_tables',
-   'recommonmark'
+    'sphinx.ext.autodoc',
+    'sphinx.ext.viewcode',
+    'sphinx_automodapi.automodapi',
+    'sphinx.ext.inheritance_diagram',
+    'sphinx.ext.autosummary',
+    'sphinx_markdown_tables',
+    'recommonmark'
 ]
 
 source_suffix = {
@@ -48,6 +46,8 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
+
+autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -64,16 +64,15 @@ language = 'python'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#add_module_names = False
+# add_module_names = False
 html_last_updated_fmt = '%b %d, %Y'
 html_domain_indices = True
 html_theme = 'sphinx_rtd_theme'
-#html_logo = './_static/arctern-color.png'
+# html_logo = './_static/arctern-color.png'
 inheritance_graph_attrs = dict(rankdir="LR", size='"6.0, 8.0"',
                                fontsize=14, ratio='compress')
 # Add any paths that contain custom static files (such as style sheets) here,
