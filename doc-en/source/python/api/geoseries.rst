@@ -11,7 +11,7 @@ Pandas Series. It internally store geometry as bytes object.
 Constructor
 -----------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
    :template: autosummaryclass.rst
 
    GeoSeries
@@ -20,7 +20,7 @@ Constructor
 Attributes
 ----------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
 
    GeoSeries.is_valid
    GeoSeries.length
@@ -35,7 +35,7 @@ Attributes
 Processing Geometry
 -------------------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
 
    GeoSeries.buffer
    GeoSeries.precision_reduce
@@ -48,7 +48,7 @@ Processing Geometry
 Spatial Relationship
 --------------------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
 
    GeoSeries.geom_equals
    GeoSeries.touches
@@ -61,7 +61,7 @@ Spatial Relationship
 Measurement
 -----------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
 
    GeoSeries.distance_sphere
    GeoSeries.distance
@@ -70,7 +70,7 @@ Measurement
 Aggregation
 -----------
 .. autosummary::
-   :toctree: geoseries/
+   :toctree: reference/
 
    GeoSeries.union_aggr
    GeoSeries.envelope_aggr
