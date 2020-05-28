@@ -15,7 +15,7 @@ Constructor Functions
    ST_GeomFromText
    ST_GeomFromGeoJSON
    ST_AsText
-   ST_AsGeoJson
+   ST_AsGeoJSON
 
 
 Measurement Functions

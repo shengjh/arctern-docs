@@ -3,3 +3,4 @@ doc-cn/build/
 doc-en/build/
 .idea
 doc-en/source/python/api/reference
+doc-en/source/spark/api/reference
