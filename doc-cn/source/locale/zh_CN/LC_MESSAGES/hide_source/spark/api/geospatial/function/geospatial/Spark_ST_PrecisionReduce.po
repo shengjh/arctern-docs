@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Arctern \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-26 15:43+0800\n"
+"POT-Creation-Date: 2020-06-05 16:17+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,4 +54,32 @@ msgstr ""
 #: arctern_pyspark._wrapper_func.ST_PrecisionReduce of
 msgid "example"
 msgstr ""
+
+#~ msgid ""
+#~ "For the coordinates of the geometry, "
+#~ "reduce the number of significant digits"
+#~ " to the given number. The last "
+#~ "decimal place will be rounded."
+#~ msgstr ""
+
+#~ msgid "参数"
+#~ msgstr ""
+
+#~ msgid "Geometry"
+#~ msgstr ""
+
+#~ msgid "The number to of ignificant digits."
+#~ msgstr ""
+
+#~ msgid "返回类型"
+#~ msgstr ""
+
+#~ msgid "返回"
+#~ msgstr ""
+
+#~ msgid "Geometry with reduced precision."
+#~ msgstr ""
+
+#~ msgid "example"
+#~ msgstr ""
 
